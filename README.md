@@ -1,34 +1,26 @@
-# React + TypeScript + Vite
+# A File Media Player using HTML `<video />` tag
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Goal
 
+Goal of this repo is to create a new react media player that will be a composite "lego" player
+and consumer can use any piece of it, regarding to its own needs and saving by its own performance
 
-Player based on MSE:
-articles:
-https://medium.com/@RossetPaul/media-source-extension-mse-javascript-api-the-building-block-of-streaming-on-the-web-b1f0d2a0e2d3
-https://www.smashingmagazine.com/2016/04/html5-media-source-extensions-bringing-production-video-web/
-https://web.dev/articles/media-mse-basics
+### TODO
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- [x] Support for media files:
+  - [x] Video files (`*.mp4, *.avi`...-> containers with video track)
+  - [ ] Audio files(`*.mp3` and others)
+  - [ ] Video/audio streams
+  - [ ] Youtube
+  - [ ] vimeo
+- [ ] Automatic documentation(`typedoc`??? )
+- [x] Prepare project environment (storybook, linter, prettier)
+- [ ] Create media store on a composite level
+  - [x] Create a state with `zustand`
+  - [ ] Emit HTMLMedia events into new created media store
+- [ ] Add tests (vitest)
+- [ ] Create first version and register it to `npm`
+  - [ ]  Add automatization (Github Actions)
+    - [ ] Run tests
+    - [ ] Create storybook on `gihtub pages`
+    - [ ] Publish new version to `npm`

@@ -1,4 +1,5 @@
 import { FC, memo, useRef } from 'react';
+
 import {
   MediaProviderProps,
   MediaStoreContext,

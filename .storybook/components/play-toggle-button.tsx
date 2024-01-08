@@ -1,7 +1,7 @@
 import { FC, memo } from 'react';
-import { useMediaStore } from '../../src/hooks/use-media-store';
 import React from 'react';
 import { shallow } from 'zustand/shallow';
+import { useMediaStore } from '../../lib/hooks/use-media-store';
 
 interface PlayToggleButtonProps {}
 

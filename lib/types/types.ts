@@ -1,5 +1,6 @@
 import { Emitter } from 'mitt';
 import { MutableRefObject, RefObject } from 'react';
+
 import { MediaStore } from '../store/media-store';
 
 export interface MediaState {

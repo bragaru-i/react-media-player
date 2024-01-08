@@ -1,11 +1,12 @@
 import mitt from 'mitt';
+
+import { MediaStore } from '../store/media-store';
 import {
   MediaControls,
   MediaEvents,
   MediaState,
   MediaStateExternalInitializers,
 } from '../types/types';
-import { MediaStore } from '../store/media-store';
 
 export const NO_OP = () => [];
 

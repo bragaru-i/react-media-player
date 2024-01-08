@@ -1,11 +1,9 @@
 import type { Meta, StoryFn } from '@storybook/react';
 
-import { CorePlayer, CorePlayerProps } from '../../src';
 import React, { useState } from 'react';
 import { VIDEO_URL } from '../utils/constants';
-import { useMediaStore } from '../../src/hooks/use-media-store';
-import { shallow } from 'zustand/shallow';
 import { PlayToggleButton } from '../components/play-toggle-button';
+import { CorePlayerProps, CorePlayer } from '../../lib/main';
 
 export const Primary: StoryFn<CorePlayerProps> = () => {
   const [count, setCount] = useState(0);

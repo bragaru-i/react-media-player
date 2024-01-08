@@ -1,6 +1,7 @@
 import { ReactNode, createContext } from 'react';
-import { MediaStore } from '../store/media-store';
 import { StoreApi } from 'zustand';
+
+import { MediaStore } from '../store/media-store';
 import { DEFAULT_MEDIA_STORE_CONTEXT } from '../utils';
 
 export interface MediaProviderProps {

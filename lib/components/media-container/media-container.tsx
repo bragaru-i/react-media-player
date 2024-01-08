@@ -1,4 +1,5 @@
 import { FC, ReactNode } from 'react';
+
 import { useMediaStore } from '../../hooks/use-media-store';
 import { Player, PlayerProps } from '../player/player';
 

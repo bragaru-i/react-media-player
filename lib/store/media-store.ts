@@ -1,4 +1,3 @@
-/* eslint-disable max-lines */
 import { create, StateCreator } from 'zustand';
 
 import {

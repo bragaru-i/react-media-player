@@ -1,4 +1,5 @@
 import { FC, memo } from 'react';
+
 import { useMediaStore } from '../../hooks/use-media-store';
 
 export interface PlayerProps {
